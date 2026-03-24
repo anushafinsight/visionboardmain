@@ -1,0 +1,29 @@
+{
+	"name": "Parquet3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_gen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "UTF8"
+			},
+			{
+				"name": "Prop_1",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

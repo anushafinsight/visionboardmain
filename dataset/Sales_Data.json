@@ -1,0 +1,22 @@
+{
+	"name": "Sales_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sales_Data.xlsx",
+				"container": "input"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

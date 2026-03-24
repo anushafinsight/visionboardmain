@@ -1,0 +1,9 @@
+{
+	"name": "vbprod",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bb94b725-e64d-438a-af62-e515668764ce",
+		"tenantId": "94dc1d77-4330-46ff-9aad-9a3ba319e74b"
+	}
+}

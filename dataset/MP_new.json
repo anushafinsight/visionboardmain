@@ -1,0 +1,33 @@
+{
+	"name": "MP_new",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MPnewnew",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "multiplefiles",
+				"fileSystem": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SIC_Code",
+				"type": "String"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

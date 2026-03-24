@@ -1,0 +1,48 @@
+{
+	"name": "SP activity",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored_procedure_insert",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[InsertCustomer]",
+					"storedProcedureParameters": {
+						"City": {
+							"value": "NewYork",
+							"type": "String"
+						},
+						"CustomerID": {
+							"value": "19",
+							"type": "Int32"
+						},
+						"CustomerName": {
+							"value": "KIRUBA",
+							"type": "String"
+						},
+						"PurchaseAmount": {
+							"value": "38000000",
+							"type": "Int32"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "SqlServer1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-03-19T10:40:43Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost",
+			"database": "master",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "LAPTOP-U9A96ELC\\Tuf",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwNjk1OTljZC0zZjY1LTRhMTItOTI3Ni0wODczZTFhMjZmNTciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "localMSSQLserver",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "localMSSQLserver",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
