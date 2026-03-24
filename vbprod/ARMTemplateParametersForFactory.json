@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "vbprod"
+		},
+		"MPls_accountKey": {
+			"value": ""
+		},
+		"MPnewnew_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"ls_blob_connectionString": {
+			"value": ""
+		},
+		"ls_gen2_accountKey": {
+			"value": ""
+		},
+		"AzureKeyVaultadf_properties_typeProperties_baseUrl": {
+			"value": "https://vbkv.vault.azure.net/"
+		},
+		"MPls_properties_typeProperties_url": {
+			"value": "https://vbprodgen2.dfs.core.windows.net/"
+		},
+		"MPnewnew_properties_typeProperties_url": {
+			"value": "https://vbprodgen2.dfs.core.windows.net/"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/posts"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "master"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "LAPTOP-U9A96ELC\\Tuf"
+		},
+		"ls_gen2_properties_typeProperties_url": {
+			"value": "https://vbprodgen2.dfs.core.windows.net/"
+		}
+	}
+}
