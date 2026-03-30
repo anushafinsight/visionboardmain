@@ -731,7 +731,20 @@
 											"type": "PipelineReference"
 										},
 										"waitOnCompletion": true,
-										"parameters": {}
+										"parameters": {
+											"TableSchema": {
+												"value": "@pipeline().parameters.TableSchema",
+												"type": "Expression"
+											},
+											"TableName": {
+												"value": "@pipeline().parameters.TableName",
+												"type": "Expression"
+											},
+											"WatermarkColumn": {
+												"value": "@pipeline().parameters.WatermarkColumn",
+												"type": "Expression"
+											}
+										}
 									}
 								}
 							]
@@ -1066,19 +1079,19 @@
 										},
 										"waitOnCompletion": true,
 										"parameters": {
-											"[[TableSchema]": {
+											"TableSchema": {
 												"value": "@item().TableSchema",
 												"type": "Expression"
 											},
-											"[[TableName]": {
+											"TableName": {
 												"value": "@item().TableName",
 												"type": "Expression"
 											},
-											"[[WatermarkColumn]": {
+											"WatermarkColumn": {
 												"value": "@item().WatermarkColumn",
 												"type": "Expression"
 											},
-											"[[LastLoadValue]": {
+											"LastLoadValue": {
 												"value": "@item().LastLoadValue",
 												"type": "Expression"
 											}
