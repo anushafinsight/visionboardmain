@@ -598,6 +598,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "project"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1338,6 +1341,9 @@
 					"LastLoadValue": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "project"
 				},
 				"annotations": []
 			},

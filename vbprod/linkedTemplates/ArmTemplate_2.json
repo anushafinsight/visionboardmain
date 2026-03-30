@@ -396,6 +396,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "project"
+				},
 				"annotations": []
 			},
 			"dependsOn": []

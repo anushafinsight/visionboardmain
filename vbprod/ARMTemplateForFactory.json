@@ -755,6 +755,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "project"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -826,6 +829,9 @@
 					"WatermarkColumn": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "project"
 				},
 				"annotations": []
 			},
@@ -1085,6 +1091,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "project"
 				},
 				"annotations": []
 			},
