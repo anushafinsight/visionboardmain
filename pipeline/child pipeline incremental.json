@@ -1,6 +1,63 @@
 {
 	"name": "child pipeline incremental",
 	"properties": {
+		"activities": [
+			{
+				"name": "Lookup max value",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "ds_maxvalue_lookup",
+						"type": "DatasetReference",
+						"parameters": {
+							"schemaname": {
+								"value": "@pipeline().parameters.[TableSchema]",
+								"type": "Expression"
+							},
+							"tablename": {
+								"value": "@pipeline().parameters.[TableName]",
+								"type": "Expression"
+							}
+						}
+					},
+					"firstRowOnly": false
+				}
+			},
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
+		"parameters": {
+			"[TableSchema]": {
+				"type": "string"
+			},
+			"[TableName]": {
+				"type": "string"
+			},
+			"[WatermarkColumn]": {
+				"type": "string"
+			},
+			"[LastLoadValue]": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
