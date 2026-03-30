@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "vbprod"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"MPls_accountKey": {
 			"value": ""
 		},
@@ -19,6 +22,9 @@
 		},
 		"ls_gen2_accountKey": {
 			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://vbprodgen2.dfs.core.windows.net/"
 		},
 		"AzureKeyVaultadf_properties_typeProperties_baseUrl": {
 			"value": "https://vbkv.vault.azure.net/"

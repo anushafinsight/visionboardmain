@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "vbprod"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
 		"MPls_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'MPls'"
@@ -26,6 +30,10 @@
 		"ls_gen2_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_gen2'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://vbprodgen2.dfs.core.windows.net/"
 		},
 		"AzureKeyVaultadf_properties_typeProperties_baseUrl": {
 			"type": "string",
@@ -86,6 +94,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
 					"MPls_accountKey": {
 						"value": "[parameters('MPls_accountKey')]"
 					},
@@ -97,6 +108,9 @@
 					},
 					"ls_gen2_accountKey": {
 						"value": "[parameters('ls_gen2_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
 					"AzureKeyVaultadf_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVaultadf_properties_typeProperties_baseUrl')]"
