@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText5",
+	"name": "Destination",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_gen2",

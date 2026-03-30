@@ -120,7 +120,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DelimitedText5",
+									"referenceName": "Destination",
 									"type": "DatasetReference",
 									"parameters": {
 										"Table_Name": {
